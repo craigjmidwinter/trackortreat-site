@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self'">
+<title>Privacy · Track or Treat</title>
+<link rel="canonical" href="https://track-or-treat.com/privacy">
+<style>body{font:17px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:680px;margin:0 auto;padding:24px 18px 60px;background:#0b0619;color:#f6f0ff}h1,h2{color:#ffb347}h2{font-size:1.15rem;margin-top:1.6em}a{color:#ffb347}li{margin:.3em 0}.muted{color:#bcaee0;font-size:.9rem}</style>
+</head>
+<body>
+<p><a href="/">← Track or Treat</a></p>
+<h1>Privacy</h1>
+<p class="muted">Effective 31 October 2026. Plain language, no tricks.</p>
+
+<h2>The short version</h2>
+<ul>
+<li><b>No account needed.</b> Counting trick-or-treaters at your door works without signing in, and your counts stay on your device.</li>
+<li><b>If you sign in</b> (to join a lobby with friends), we store your Google account id, never your email, name or photo.</li>
+<li><b>Never stored by us:</b> your address, your location, or anything about a child.</li>
+<li><b>Delete any time:</b> "Delete my account" in the app removes your account straight away.</li>
+</ul>
+
+<h2>On your device</h2>
+<p>Your counts, costume tags, candy stock, bingo card, achievements and door stamps are saved in your browser's storage (IndexedDB) on this device. They don't leave the device unless you choose to share a link or join a lobby. Clearing site data or using "Reset all data" in the app deletes them.</p>
+
+<h2>If you sign in and join a lobby</h2>
+<p>We store only what the lobby needs:</p>
+<ul>
+<li>a random account id, and your <b>Google account id</b> ("sub") if you sign in with Google. We do <b>not</b> store your email, Google name, photo or locale. Your email is checked once at sign-in (only to see whether you're the site administrator) and then discarded;</li>
+<li>the display name and <b>house nickname</b> you choose (please use a fun name, not your street or address);</li>
+<li>your house's <b>totals</b>: kids, groups, costume counts from a fixed list of types (witch, ghost, superhero, and so on), and bingo lines;</li>
+<li>a short live ticker built from fixed templates ("Bat Cave hit 50 kids!"), with times rounded to the minute;</li>
+<li>a sign-in session (we keep only a one-way hash of it).</li>
+</ul>
+<p>People in your lobby can see house nicknames and those totals. If someone has a read-only spectator link you created, they can see the same. Nothing about where you are is ever sent or stored.</p>
+
+<h2>How long we keep it</h2>
+<ul>
+<li>Sign-in sessions: up to 30 days.</li>
+<li>Lobbies, houses, counts and ticker: deleted about a week after the lobby is created (ticker items after 24 hours).</li>
+<li>Accounts: deleted when you ask, or after 60 days without signing in.</li>
+<li>Our database provider (Cloudflare) may keep a recovery copy for up to 7 days after deletion.</li>
+</ul>
+
+<h2>Delete your account</h2>
+<p>In the app: <b>👤 Account → Delete my account</b>. This deletes your account, sessions and memberships at once. Houses you own are handed to another member, or deleted if no one else is in them. The counts on your device stay on your device until you delete them there.</p>
+
+<h2>Who processes data</h2>
+<ul>
+<li><b>Google</b>: "Sign in with Google" (only if you use it).</li>
+<li><b>Cloudflare</b> (United States): runs the lobby and account service and its database.</li>
+<li><b>GitHub Pages</b>: hosts this website. Like any web host, it may keep standard server logs (such as IP addresses).</li>
+<li><b>Your browser's speech service</b>: only if you use costume dictation. Your browser (Google in Chrome, Apple in Safari) may receive the audio to turn it into text. We keep only the matched costume types, never the audio or the transcript.</li>
+</ul>
+<p>There are no ads, no analytics and no tracking cookies, and we don't sell or share data.</p>
+
+<h2>Children</h2>
+<p>Track or Treat is for the grown-up at the door. We store counts and costume types only, never names, photos, ages or anything identifying a child.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:privacy@track-or-treat.com">privacy@track-or-treat.com</a></p>
+<p class="muted">We'll update this page if anything changes, with a new effective date.</p>
+</body>
+</html>
